@@ -23,7 +23,7 @@ Bem-vindo à documentação do frontend da HSS RENTAL - sua interface para a loc
 
 ## Como Rodar o Projeto
 
-**LEMBRE-SE DE CONFIGURAR O PROJETO FRONTEND:** [REPOSITÓRIO](https://github.com/Ruberson1/hss-rental-api-public)
+**LEMBRE-SE DE CONFIGURAR O PROJETO BACKEND:** [REPOSITÓRIO](https://github.com/Ruberson1/hss-rental-api-public)
 
 1. Faça o clone do projeto em sua máquina.
 2. Execute o comando `yarn install` ou `npm install` para instalar as dependências.
