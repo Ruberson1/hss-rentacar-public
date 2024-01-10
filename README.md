@@ -1,49 +1,41 @@
+# HSS RENTAL - Frontend
 
-# Sistema de Esteira de Desenvolvimento
+Bem-vindo à documentação do frontend da HSS RENTAL - sua interface para a locadora de veículos desenvolvida com Vue, Vite, e Typescript. Esta aplicação proporciona aos clientes (CUSTOMER) uma experiência intuitiva para locar veículos, enquanto os funcionários (COMMOM) gerenciam e confirmam as locações. Os administradores (ADMIN) têm permissões adicionais para gerenciar usuários e veículos.
 
-Este é um sistema de esteira de desenvolvimento que foi criado para auxiliar a equipe de desenvolvimento a acompanhar o progresso de suas tarefas, desde o cadastro até a implantação no ambiente de produção.
-
-## Tecnologias Utilizadas
-
-O sistema foi desenvolvido utilizando as seguintes tecnologias:
-
-- **Vue 3**: Um framework JavaScript para a construção de interfaces de usuário interativas e reativas.
-
-- **TypeScript**: Uma linguagem de programação que adiciona tipagem estática ao JavaScript, tornando o código mais seguro e legível.
-
-- **Vite**: Um construtor de aplicações JavaScript/TypeScript extremamente rápido que oferece desenvolvimento em tempo real.
-
-- **Tailwind CSS**: Uma biblioteca de estilos utilitários que permite criar rapidamente interfaces de usuário bonitas e responsivas.
-
-- **Axios**: Uma biblioteca JavaScript que facilita o envio de solicitações HTTP a servidores e o gerenciamento de respostas em aplicativos web e móveis.
-
-- **Pinia**: Uma biblioteca de gerenciamento de estado de código aberto projetada para aplicativos Vue.js, fornecendo uma maneira simples e eficaz de gerenciar o estado da aplicação.
+**Conheça a HSS RENTAL:** [Acesse](https://hssrental.netlify.app)
 
 ## Funcionalidades Principais
 
-O sistema oferece as seguintes funcionalidades:
+1. **Cadastro e Locação de Veículos:**
+   - Os clientes (CUSTOMER) podem se cadastrar na plataforma e escolher veículos para locação, especificando as datas de retirada e devolução.
+   - Notificações via e-mail e push são enviadas aos clientes quando as locações são confirmadas pelos funcionários (COMMOM).
 
-1. **Cadastro de Tarefas**: Os membros da equipe podem cadastrar novas tarefas no sistema, fornecendo informações relevantes, como descrição, prazo e responsável.
+2. **Permissões de Usuários:**
+   - **CUSTOMER:** Pode realizar locações e visualizar seu histórico de locações.
+   - **COMMOM:** Funcionário sem permissões administrativas, confirma locações e verifica o histórico geral de locações.
+   - **ADMIN:** Tem todas as permissões do COMMOM e pode listar, editar e cadastrar usuários e veículos.
 
-2. **Acompanhamento de Tarefas**: Tanto o Tech Lead quanto os desenvolvedores podem acompanhar o andamento de suas respectivas tarefas. Isso inclui a visualização do status atual, comentários e anexos relacionados à tarefa.
+3. **Disponibilidade de Veículos:**
+   - A aplicação garante que apenas veículos disponíveis na data escolhida estejam disponíveis para locação, evitando conflitos de reservas.
 
-3. **Transição de Etapas**: O sistema permite que as tarefas se movam através de diferentes etapas da esteira de desenvolvimento, como "DEV", "HOMOLOGANDO" e "LIB. PROD". Isso ajuda a equipe a manter um controle claro do progresso.
+4. **Notificações e Promoções:**
+   - Os clientes recebem notificações push e e-mails para locações confirmadas, além de promoções e avisos programados pela equipe de marketing.
 
-4. **Integração com Produção**: Quando uma tarefa está pronta para ser implantada em produção, a equipe pode iniciar o processo de integração. O sistema pode oferecer recursos de integração contínua ou ajudar a coordenar a entrega no ambiente de produção.
+## Como Rodar o Projeto
 
-## Como Iniciar
+**LEMBRE-SE DE CONFIGURAR O PROJETO FRONTEND:** [REPOSITÓRIO](https://github.com/Ruberson1/hss-rental-api-public)
 
-Para iniciar o sistema em seu ambiente local, siga estas etapas:
+1. Faça o clone do projeto em sua máquina.
+2. Execute o comando `yarn install` ou `npm install` para instalar as dependências.
+3. Renomeie o arquivo `.env.example` para `.env` e configure as variáveis de ambiente conforme suas credenciais.
+4. Execute o comando `yarn dev` ou `npm run dev` para iniciar a aplicação.
 
-1. Clone este repositório.
+## Tecnologias Utilizadas
 
-2. Instale as dependências usando `npm install` ou `yarn install`.
+- **Vue, Vite, e Typescript:** Plataforma poderosa e eficiente para o desenvolvimento de interfaces modernas.
+- **Axios:** Cliente HTTP para comunicação eficiente com o backend.
+- **Pinia:** Gerenciamento de estado para uma arquitetura robusta e escalável.
+- **Tailwind CSS:** Framework de estilização para uma abordagem prática e consistente.
+- **PrimeVue:** Biblioteca Vue para elementos de interface pré-configurados, proporcionando uma experiência de usuário aprimorada.
 
-3. Inicie o servidor de desenvolvimento com `npm run dev` ou `yarn dev`.
-
-4. Acesse o sistema no navegador em `http://localhost:3000` (ou outra porta, dependendo da configuração).
-
-## Contato
-
-Se você tiver alguma dúvida ou precisar de suporte, sinta-se à vontade para entrar em contato em [[Portifolio](https://ruberson-as-portifolio.netlify.app/)].
-
+Divirta-se explorando a HSS RENTAL!
